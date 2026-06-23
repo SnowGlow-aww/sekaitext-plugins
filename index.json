@@ -4,13 +4,13 @@
     {
       "id": "live2d",
       "name": "Live2D 剧情播放器",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "description": "在编辑器内播放 Live2D 剧情，支持模型/动作/语音/特效与本地素材库。",
       "author": "雪莹ちゃん",
       "icon": "Drama",
       "minHostVersion": "2.0.0",
-      "download": "https://raw.githubusercontent.com/SnowGlow-aww/sekaitext-plugins/main/plugins/live2d-1.0.2.sekplugin",
-      "sha256": "ff6b02aea62b06ff7460753b37d9bbf4ce6d066a1c1a7f4f3cad1438c41f0ee4",
+      "download": "https://raw.githubusercontent.com/SnowGlow-aww/sekaitext-plugins/main/plugins/live2d-1.0.3.sekplugin",
+      "sha256": "6ae03b301ee88dcfb5c59629cb327a3667c18417fea45fe818aea6be60f6ae0d",
       "homepage": "https://github.com/SnowGlow-aww/sekaitext-plugin-live2d"
     }
   ]
