@@ -12,6 +12,18 @@
       "download": "https://raw.githubusercontent.com/SnowGlow-aww/sekaitext-plugins/main/plugins/live2d-1.0.6.sekplugin",
       "sha256": "8c565ead0f94609ffdd6b96c7767400b1cf51956d63fc8a3213a82ee137ce314",
       "homepage": "https://github.com/SnowGlow-aww/sekaitext-plugin-live2d"
+    },
+    {
+      "id": "auto-timing",
+      "name": "自动轴机 + 压制",
+      "version": "1.0.3",
+      "description": "在编辑器内对视频自动打轴(识别对话生成时间轴)并压制(烧录字幕导出成片)。",
+      "author": "雪莹ちゃん",
+      "icon": "Clapperboard",
+      "minHostVersion": "2.0.0",
+      "download": "https://raw.githubusercontent.com/SnowGlow-aww/sekaitext-plugins/main/plugins/auto-timing-1.0.3.sekplugin",
+      "sha256": "1bdac4fcc5891ac5ce38c1e3b12fe17d23a081f846cc56c4a2d9d526e8e24c0f",
+      "homepage": "https://github.com/SnowGlow-aww/sekaitext-plugin-autotiming"
     }
   ]
 }
