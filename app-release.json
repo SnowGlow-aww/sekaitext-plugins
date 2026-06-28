@@ -1,9 +1,9 @@
 {
-  "version": "4.1.2",
-  "notes": "新增「检查更新」按钮 + 窗口聚焦自动复查；含 v4.1.1 全部安全加固（能力令牌 · 回环绑定 · 下载源校验）与稳定性修复",
+  "version": "4.1.4",
+  "notes": "默认字体更新为新版荆南麦圆体（TTF）；含端口自愈修复——装了新版仍连到旧后端导致检查更新失败的问题已根治",
   "pubDate": "2026-06-28",
   "downloads": {
-    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.1.2/SekaiText.Next_4.1.2_aarch64.dmg",
-    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.1.2/SekaiText.Next_4.1.2_x64-setup.exe"
+    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.1.4/SekaiText.Next_4.1.4_aarch64.dmg",
+    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.1.4/SekaiText.Next_4.1.4_x64-setup.exe"
   }
 }
