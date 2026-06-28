@@ -16,13 +16,13 @@
     {
       "id": "auto-timing",
       "name": "自动轴机 + 压制",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "description": "在编辑器内对视频自动打轴(识别对话生成时间轴)并压制(烧录字幕导出成片)。",
       "author": "雪莹ちゃん",
       "icon": "Clapperboard",
       "minHostVersion": "2.0.0",
-      "download": "https://raw.githubusercontent.com/SnowGlow-aww/sekaitext-plugins/main/plugins/auto-timing-1.0.3.sekplugin",
-      "sha256": "1bdac4fcc5891ac5ce38c1e3b12fe17d23a081f846cc56c4a2d9d526e8e24c0f",
+      "download": "https://raw.githubusercontent.com/SnowGlow-aww/sekaitext-plugins/main/plugins/auto-timing-1.0.4.sekplugin",
+      "sha256": "c078e6c8c8013346e706cc79733e253bd4ddc41f4cc78fcfcca5284c9a960951",
       "homepage": "https://github.com/SnowGlow-aww/sekaitext-plugin-autotiming"
     }
   ]
