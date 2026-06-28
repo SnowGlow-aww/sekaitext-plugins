@@ -1,0 +1,9 @@
+{
+  "version": "4.1.0",
+  "notes": "自动更新(本体+插件) · GitHub 下载镜像加速 · 默认初音未来配色 · 内置荆南麦圆体 · 自动轴机插件完整可用",
+  "pubDate": "2026-06-28",
+  "downloads": {
+    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.1.0/SekaiText.Next_4.1.0_aarch64.dmg",
+    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.1.0/SekaiText.Next_4.1.0_x64-setup.exe"
+  }
+}
