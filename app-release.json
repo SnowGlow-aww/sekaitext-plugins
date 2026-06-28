@@ -1,9 +1,9 @@
 {
-  "version": "4.2.0",
-  "notes": "自动轴机：根治连打多个视频时第二个无法导出 ass；字幕按剧本名命名(如 event_206_05.ass)、可自定义字幕输出目录；全部「引擎」更名为「内核」(SekaiCoreEngine)；JSON 下载输出目录记忆；多项轴机稳定性修复。",
+  "version": "4.2.1",
+  "notes": "紧急修复：自动轴机导出的字幕「只有样式、没有时间轴」(空 ass)——内核构造配置时 default(struct) 把导出开关全置 false，过滤掉了所有字幕行；同时修复字体名为空/打字机失效。识别本身一直正常。",
   "pubDate": "2026-06-28",
   "downloads": {
-    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.2.0/SekaiText.Next_4.2.0_aarch64.dmg",
-    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.2.0/SekaiText.Next_4.2.0_x64-setup.exe"
+    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.2.1/SekaiText.Next_4.2.1_aarch64.dmg",
+    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.2.1/SekaiText.Next_4.2.1_x64-setup.exe"
   }
 }
