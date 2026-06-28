@@ -1,9 +1,9 @@
 {
-  "version": "4.1.1",
-  "notes": "安全加固（能力令牌防自更新滥用 · 默认本机回环 · 下载源校验）· 修复编辑器/调试页生命周期与并发隐患 · 清理死代码",
+  "version": "4.1.2",
+  "notes": "新增「检查更新」按钮 + 窗口聚焦自动复查；含 v4.1.1 全部安全加固（能力令牌 · 回环绑定 · 下载源校验）与稳定性修复",
   "pubDate": "2026-06-28",
   "downloads": {
-    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.1.1/SekaiText.Next_4.1.1_aarch64.dmg",
-    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.1.1/SekaiText.Next_4.1.1_x64-setup.exe"
+    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.1.2/SekaiText.Next_4.1.2_aarch64.dmg",
+    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.1.2/SekaiText.Next_4.1.2_x64-setup.exe"
   }
 }
