@@ -1,9 +1,9 @@
 {
-  "version": "4.2.3",
-  "notes": "· 全新应用图标\n· 新增「界面字号」滑块：设置 → 外观 → 主题模式右侧，可整体缩放界面字号（12–25，默认 16，与编辑器字号独立）",
+  "version": "4.3.0",
+  "notes": "",
   "pubDate": "2026-06-29",
   "downloads": {
-    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.2.3/SekaiText.Next_4.2.3_aarch64.dmg",
-    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.2.3/SekaiText.Next_4.2.3_x64-setup.exe"
+    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.3.0/SekaiText.Next_4.3.0_aarch64.dmg",
+    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.3.0/SekaiText.Next_4.3.0_x64-setup.exe"
   }
 }
