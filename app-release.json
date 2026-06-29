@@ -1,9 +1,9 @@
 {
-  "version": "4.2.1",
-  "notes": "紧急修复：自动轴机导出的字幕「只有样式、没有时间轴」(空 ass)——内核构造配置时 default(struct) 把导出开关全置 false，过滤掉了所有字幕行；同时修复字体名为空/打字机失效。识别本身一直正常。",
-  "pubDate": "2026-06-28",
+  "version": "4.2.3",
+  "notes": "· 全新应用图标\n· 新增「界面字号」滑块：设置 → 外观 → 主题模式右侧，可整体缩放界面字号（12–25，默认 16，与编辑器字号独立）",
+  "pubDate": "2026-06-29",
   "downloads": {
-    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.2.1/SekaiText.Next_4.2.1_aarch64.dmg",
-    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.2.1/SekaiText.Next_4.2.1_x64-setup.exe"
+    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.2.3/SekaiText.Next_4.2.3_aarch64.dmg",
+    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v4.2.3/SekaiText.Next_4.2.3_x64-setup.exe"
   }
 }
