@@ -1,9 +1,9 @@
 {
-  "version": "5.0.0",
+  "version": "5.0.1",
   "notes": "",
-  "pubDate": "2026-06-30",
+  "pubDate": "2026-07-05",
   "downloads": {
-    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.0.0/SekaiText.Next_5.0.0_aarch64.dmg",
-    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.0.0/SekaiText.Next_5.0.0_x64-setup.exe"
+    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.0.1/SekaiText.Next_5.0.1_aarch64.dmg",
+    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.0.1/SekaiText.Next_5.0.1_x64-setup.exe"
   }
 }
