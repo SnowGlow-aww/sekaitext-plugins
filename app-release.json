@@ -1,9 +1,9 @@
 {
   "version": "5.2.1",
-  "notes": "",
+  "notes": "编辑器头像增强：带修饰的说话人（絵名の声、奏のメッセージ、剧中剧角色名等）现在按台词配音模型通用匹配头像，多人同框取首位，mob 配角不再误挂主角头像；设置页「外观」新增角色头像材质替换——导入包含 chr_1.png ~ chr_31.png 的文件夹即可自定义头像，一键恢复默认。",
   "pubDate": "2026-07-09",
   "downloads": {
-    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.2.1/SekaiText.Next_5.2.1_aarch64.dmg",
-    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.2.1/SekaiText.Next_5.2.1_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.2.1/SekaiText.Next_5.2.1_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.2.1/SekaiText.Next_5.2.1_x64-setup.exe"
   }
 }
