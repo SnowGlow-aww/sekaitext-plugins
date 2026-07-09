@@ -1,9 +1,9 @@
 {
-  "version": "5.2.0",
-  "notes": "轴机大更新：双列界面，识别结果可逐行检查与分句微调（文本分割点、换行帧 ±1/±5、按打字速度估算的建议帧、换行帧画面预览、溢出预警）；与 Aegisub 双向同步——Aegisub 里 Ctrl+S 自动回读、轴机改动一键推送，同步宏自动安装；导出内建成品清理与团队样式模板，开箱即用；设置新增「更新与插件下载源」（国内 CDN 加速 / GitHub 直连）。",
+  "version": "5.2.1",
+  "notes": "",
   "pubDate": "2026-07-09",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.2.0/SekaiText.Next_5.2.0_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.2.0/SekaiText.Next_5.2.0_x64-setup.exe"
+    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.2.1/SekaiText.Next_5.2.1_aarch64.dmg",
+    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.2.1/SekaiText.Next_5.2.1_x64-setup.exe"
   }
 }
