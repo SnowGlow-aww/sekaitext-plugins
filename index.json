@@ -16,13 +16,13 @@
     {
       "id": "auto-timing",
       "name": "自动轴机 + 压制",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "description": "在编辑器内自动打轴(双列行列表+分句微调)、与 Aegisub 双向同步、并压制(烧录字幕导出成片)。",
       "author": "雪莹ちゃん",
       "icon": "Clapperboard",
       "minHostVersion": "5.2.0",
-      "download": "https://raw.githubusercontent.com/SnowGlow-aww/sekaitext-plugins/main/plugins/auto-timing-2.0.0.sekplugin",
-      "sha256": "da85e734b16c9bf98bcd8adb6ad09b4ee4793b7df4adcfe60ad934512f396ad2",
+      "download": "https://raw.githubusercontent.com/SnowGlow-aww/sekaitext-plugins/main/plugins/auto-timing-2.0.1.sekplugin",
+      "sha256": "2d115cee7f8eed68549f6c998be7f2ba72e723d05f2d76c4d27aae429b9991cd",
       "homepage": "https://github.com/SnowGlow-aww/sekaitext-plugin-autotiming"
     }
   ]
