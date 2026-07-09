@@ -1,9 +1,9 @@
 {
-  "version": "5.3.2",
-  "notes": "修复正式版插件页面样式缺失：自动轴机页双列布局等插件专用样式从 v5.2.0 起在正式版中一直缺失（仅本地开发构建生效），现已将插件所需样式固定进应用构建，任何环境构建一致。配合自动轴机插件 v2.0.2，窗口宽度 900 以上即为双列。",
-  "pubDate": "2026-07-09",
+  "version": "5.4.0",
+  "notes": "新增：逐行自动保存——每次编辑后自动把译文写到输出目录的 autosave.txt，崩溃断电不再丢稿；工具栏新增「撤销/重做」按钮，「清空」加确认弹窗；术语库呼吸灯——有提案待审核或你的提案被通过时，侧栏「术语库」按主题色发光提醒；下载与保存目录支持访达/资源管理器可视化选择。插件更新：自动轴机 v2.1.0（微调自动保存 autosave.ass + 译文编辑显示原文）、Live2D v1.2.0（修复切换剧情卡帧/闪回黑屏/背景丢失，流畅度优化，进度条可拖拽）。",
+  "pubDate": "2026-07-10",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.3.2/SekaiText.Next_5.3.2_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.3.2/SekaiText.Next_5.3.2_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.4.0/SekaiText.Next_5.4.0_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.4.0/SekaiText.Next_5.4.0_x64-setup.exe"
   }
 }
