@@ -1,9 +1,9 @@
 {
   "version": "5.3.1",
-  "notes": "",
+  "notes": "修复自动轴机页双列布局在常规窗口宽度下不生效（双列断点降到 900，配合插件 v2.0.2 自动更新）；新手导览延伸进设置页（外观 → 编辑器偏好 → 网络与调试 → 快捷键 → 关于），并修复导览期间页面可滚动导致的高亮错位——现锁定滚动、高亮实时跟随、超高区块自动收边；设置页「关于」按钮合并为一行；官网首页焕新。",
   "pubDate": "2026-07-09",
   "downloads": {
-    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.3.1/SekaiText.Next_5.3.1_aarch64.dmg",
-    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.3.1/SekaiText.Next_5.3.1_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.3.1/SekaiText.Next_5.3.1_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.3.1/SekaiText.Next_5.3.1_x64-setup.exe"
   }
 }
