@@ -1,9 +1,9 @@
 {
-  "version": "5.3.1",
-  "notes": "修复自动轴机页双列布局在常规窗口宽度下不生效（双列断点降到 900，配合插件 v2.0.2 自动更新）；新手导览延伸进设置页（外观 → 编辑器偏好 → 网络与调试 → 快捷键 → 关于），并修复导览期间页面可滚动导致的高亮错位——现锁定滚动、高亮实时跟随、超高区块自动收边；设置页「关于」按钮合并为一行；官网首页焕新。",
+  "version": "5.3.2",
+  "notes": "修复正式版插件页面样式缺失：自动轴机页双列布局等插件专用样式从 v5.2.0 起在正式版中一直缺失（仅本地开发构建生效），现已将插件所需样式固定进应用构建，任何环境构建一致。配合自动轴机插件 v2.0.2，窗口宽度 900 以上即为双列。",
   "pubDate": "2026-07-09",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.3.1/SekaiText.Next_5.3.1_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.3.1/SekaiText.Next_5.3.1_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.3.2/SekaiText.Next_5.3.2_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.3.2/SekaiText.Next_5.3.2_x64-setup.exe"
   }
 }
