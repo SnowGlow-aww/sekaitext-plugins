@@ -1,9 +1,9 @@
 {
   "version": "5.3.0",
-  "notes": "",
+  "notes": "交互式新手导览：首次使用自动进入分步引导，随时可在 设置 → 关于 → 新手导览 重看；安装插件后首次进入自动弹出功能说明卡；老用户升级后首次启动自动展示更新要点。修复插件市场「主页」按钮点了没反应（外部链接统一改经系统浏览器打开）；「关于」新增官网 / GitHub 入口。自动轴机插件 v2.0.1：同步标识说明去歧义，「推送到 Aegisub」按钮导出后常驻显示。",
   "pubDate": "2026-07-09",
   "downloads": {
-    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.3.0/SekaiText.Next_5.3.0_aarch64.dmg",
-    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.3.0/SekaiText.Next_5.3.0_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.3.0/SekaiText.Next_5.3.0_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.3.0/SekaiText.Next_5.3.0_x64-setup.exe"
   }
 }
