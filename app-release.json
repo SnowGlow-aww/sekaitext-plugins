@@ -1,9 +1,9 @@
 {
-  "version": "5.7.2",
-  "notes": "保存体验收尾：「保存」从不询问位置，首次落盘也按剧情自动分级建档；设置新增「文稿保存路径」独立模块，更换位置时已生成文稿自动整体迁移（同名不覆盖）；顶栏「本地」按钮换成「文稿目录」，一键打开保存目录直达译文文件。",
+  "version": "5.7.3",
+  "notes": "Windows 压制修复：编码器按显卡自动判定（NVIDIA/Intel/AMD 硬编逐个真实验证后才列出，自动选中推荐项，无硬编回落 x264 软编）；压制管线固定走自带 FFmpeg，不再被老版 SekaiTools 残留组件抢走；新增 AMD AMF 硬编；NVENC 画质参数修正。需配合「自动轴机 + 压制」插件 3.1.0。",
   "pubDate": "2026-07-10",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.2/SekaiText.Next_5.7.2_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.2/SekaiText.Next_5.7.2_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.3/SekaiText.Next_5.7.3_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.3/SekaiText.Next_5.7.3_x64-setup.exe"
   }
 }
