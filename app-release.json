@@ -1,9 +1,9 @@
 {
-  "version": "5.4.0",
-  "notes": "新增：逐行自动保存——每次编辑后自动把译文写到输出目录的 autosave.txt，崩溃断电不再丢稿；工具栏新增「撤销/重做」按钮，「清空」加确认弹窗；术语库呼吸灯——有提案待审核或你的提案被通过时，侧栏「术语库」按主题色发光提醒；下载与保存目录支持访达/资源管理器可视化选择。插件更新：自动轴机 v2.1.0（微调自动保存 autosave.ass + 译文编辑显示原文）、Live2D v1.2.0（修复切换剧情卡帧/闪回黑屏/背景丢失，流畅度优化，进度条可拖拽）。",
+  "version": "5.5.0",
+  "notes": "新增：轴机多视频并行——可同时打轴/压制多个视频，任务列表随时切换/取消/关闭（默认关闭，插件页开关开启，性能不高的电脑慎用）；修复 Windows 打轴弹出黑色命令行窗口（误关会导致任务失败）。插件更新：自动轴机 v2.2.0——语音停顿对齐（拉取该句语音检测说话停顿，一键把分句换行对齐到实际停顿）；Aegisub 同步大修（Aegisub 里改的译文自动回读不再被导出覆盖、新增手动拉取按钮、便携版可手动指定目录安装同步宏）；导出清理不再删 \\N 换行、三行样式正确命中、地点横幅自动套团队「遮罩/地点名称」样式。",
   "pubDate": "2026-07-10",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.4.0/SekaiText.Next_5.4.0_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.4.0/SekaiText.Next_5.4.0_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.5.0/SekaiText.Next_5.5.0_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.5.0/SekaiText.Next_5.5.0_x64-setup.exe"
   }
 }
