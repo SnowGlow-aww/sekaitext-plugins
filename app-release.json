@@ -1,9 +1,9 @@
 {
-  "version": "5.7.1",
-  "notes": "热修复：启动「拉取元数据」依然缓慢的问题——CDN 压缩变体 ETag 击穿了新鲜度校验导致全部回落慢源站；同时探针借道边缘、9 张表并发预取，全量元数据实测从 84 秒降到 4 秒。启动元数据拉取全面加速：剧情目录更新走 CDN 镜像并以源站 ETag 实时校验（慢链路从卡死超时到数秒拉完，且保证永远最新）。保存全面重做：编辑后约 1 秒自动写入文档本体，全新文档按剧情自动建档命名，「保存」直写不再弹窗。编辑器键盘流：Esc 退出编辑、↑/↓ 换行、Enter 进入编辑，当前行自动居中。术语库分级导览：按角色（翻译/校对/管理员）分层教学，权限提升自动补播。轴机升级（引擎 2.0.0+插件 3.0.0）：横幅时间帧级精修（误差≤2帧）；staff 制作人员行随导出（人名自定义+预设）；识别阈值预设；适配 Aegisub 3.2.2～最新版。修复：Live2D 跳转语音播两次；下载页一键下全部章节；调试日志可暂停滚动；禁用浏览器右键菜单；全局按钮立体按压手感。",
+  "version": "5.7.2",
+  "notes": "保存体验收尾：「保存」从不询问位置，首次落盘也按剧情自动分级建档；设置新增「文稿保存路径」独立模块，更换位置时已生成文稿自动整体迁移（同名不覆盖）；顶栏「本地」按钮换成「文稿目录」，一键打开保存目录直达译文文件。",
   "pubDate": "2026-07-10",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.1/SekaiText.Next_5.7.1_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.1/SekaiText.Next_5.7.1_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.2/SekaiText.Next_5.7.2_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.2/SekaiText.Next_5.7.2_x64-setup.exe"
   }
 }
