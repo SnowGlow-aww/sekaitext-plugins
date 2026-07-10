@@ -1,9 +1,9 @@
 {
-  "version": "5.5.0",
-  "notes": "新增：轴机多视频并行——可同时打轴/压制多个视频，任务列表随时切换/取消/关闭（默认关闭，插件页开关开启，性能不高的电脑慎用）；修复 Windows 打轴弹出黑色命令行窗口（误关会导致任务失败）。插件更新：自动轴机 v2.2.0——语音停顿对齐（拉取该句语音检测说话停顿，一键把分句换行对齐到实际停顿）；Aegisub 同步大修（Aegisub 里改的译文自动回读不再被导出覆盖、新增手动拉取按钮、便携版可手动指定目录安装同步宏）；导出清理不再删 \\N 换行、三行样式正确命中、地点横幅自动套团队「遮罩/地点名称」样式。",
+  "version": "5.6.0",
+  "notes": "术语库上下行同步升级：管理员可在术语库页一键「上传至线上术语库」（完全替换线上内容，二次确认+空库拒绝防误清空）；每次同步到更新自动在本地 glossary/backups/ 滚动保留最近 10 份 JSON 备份，误覆盖可回滚；同步流量降至约 1/5（服务器启用压缩，全量 ~570KB→~128KB，无更新时仍只交换版本号）；账号中心「上次同步」改为显示时间。",
   "pubDate": "2026-07-10",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.5.0/SekaiText.Next_5.5.0_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.5.0/SekaiText.Next_5.5.0_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.6.0/SekaiText.Next_5.6.0_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.6.0/SekaiText.Next_5.6.0_x64-setup.exe"
   }
 }
