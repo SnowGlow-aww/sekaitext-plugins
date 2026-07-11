@@ -1,9 +1,9 @@
 {
-  "version": "5.7.3",
-  "notes": "Windows 压制修复：编码器按显卡自动判定（NVIDIA/Intel/AMD 硬编逐个真实验证后才列出，自动选中推荐项，无硬编回落 x264 软编）；压制管线固定走自带 FFmpeg，不再被老版 SekaiTools 残留组件抢走；新增 AMD AMF 硬编；NVENC 画质参数修正。需配合「自动轴机 + 压制」插件 3.1.0。",
-  "pubDate": "2026-07-10",
+  "version": "5.7.4",
+  "notes": "并行压制修复：进度显示不再串线（每任务独立进度条）；硬编启动失败自动降级 x264 软编重跑（修复概率性 ffmpeg 退出码 -19/-12）；压制日志报错自动导出、可随时查看/导出；推荐编码器独显优先；同输出路径并行任务拦截。需配合「自动轴机 + 压制」插件 3.2.0。",
+  "pubDate": "2026-07-11",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.3/SekaiText.Next_5.7.3_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.3/SekaiText.Next_5.7.3_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.4/SekaiText.Next_5.7.4_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.4/SekaiText.Next_5.7.4_x64-setup.exe"
   }
 }
