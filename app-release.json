@@ -1,9 +1,9 @@
 {
-  "version": "5.7.4",
-  "notes": "并行压制修复：进度显示不再串线（每任务独立进度条）；硬编启动失败自动降级 x264 软编重跑（修复概率性 ffmpeg 退出码 -19/-12）；压制日志报错自动导出、可随时查看/导出；推荐编码器独显优先；同输出路径并行任务拦截。需配合「自动轴机 + 压制」插件 3.2.0。",
-  "pubDate": "2026-07-11",
+  "version": "5.7.5",
+  "notes": "成品字幕行数样式修复：1行/2行/3行 改按剧情原文行数判定（此前数译文换行，译文没断行或三行长台词分句切半会被误判成 1行、译文压在日文行上）。升级后把受影响的任务重新导出即可；插件与内核无需更新。",
+  "pubDate": "2026-07-12",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.4/SekaiText.Next_5.7.4_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.4/SekaiText.Next_5.7.4_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.5/SekaiText.Next_5.7.5_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.5/SekaiText.Next_5.7.5_x64-setup.exe"
   }
 }
