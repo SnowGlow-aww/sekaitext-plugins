@@ -1,9 +1,9 @@
 {
-  "version": "5.7.7",
-  "notes": "文件名跟随文档：标题译文/模式变了已保存文件就地自动改名（此前文件名冻结在首次建档时，标题译文进不了文件名）；文稿目录统一「编号 标题」命名，旧目录文件保存时自动归位；打开老 txt 按文件名前缀识别模式，校对稿不再被当成翻译稿改写。另含内部审计的 9 处稳定性修复（Aegisub 同步窗口丢失/跨行快速编辑丢行/迁移同名覆盖/崩溃恢复坐标等）。建议同时在插件市场把自动轴机插件升级到 3.2.1。",
+  "version": "5.7.8",
+  "notes": "热修 5.7.7 回归：崩溃恢复等路径会把文稿搬进裸编号文件夹（如「208」）——载入剧情改由后端返回权威目录标签（编号 标题），文件夹跟随仅在持有文档身份时生效。被搬错的文件升级后打开再保存一次自动归位。插件与内核无需更新。",
   "pubDate": "2026-07-12",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.7/SekaiText.Next_5.7.7_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.7/SekaiText.Next_5.7.7_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.8/SekaiText.Next_5.7.8_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.8/SekaiText.Next_5.7.8_x64-setup.exe"
   }
 }
