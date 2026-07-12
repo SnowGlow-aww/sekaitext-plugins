@@ -1,9 +1,9 @@
 {
-  "version": "5.7.5",
-  "notes": "成品字幕行数样式修复：1行/2行/3行 改按剧情原文行数判定（此前数译文换行，译文没断行或三行长台词分句切半会被误判成 1行、译文压在日文行上）。升级后把受影响的任务重新导出即可；插件与内核无需更新。",
+  "version": "5.7.6",
+  "notes": "编辑器保存串档修复：文档命名与写入目标在载入剧情时固定，之后拉取/下载别的剧情不影响当前文档；载入新剧情不会再把译文写进上一个剧情的文件（此前前后篇连续翻译会互相覆盖串档，改文件名也拦不住）。卡面剧情文件名去掉 -01/-02，直接以前篇/后篇/特殊篇区分。插件与内核无需更新。",
   "pubDate": "2026-07-12",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.5/SekaiText.Next_5.7.5_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.5/SekaiText.Next_5.7.5_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.6/SekaiText.Next_5.7.6_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.7.6/SekaiText.Next_5.7.6_x64-setup.exe"
   }
 }
