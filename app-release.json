@@ -1,9 +1,9 @@
 {
-  "version": "5.8.0",
-  "notes": "新功能：字典模块。术语库页新增「导入字典」，装入 JSON 词典（如日汉双解学习词典）后成为一个只读分类，可浏览可搜索；编辑器里鼠标悬停原文词语即可查看读音、声调与完整释义（工具栏「字典」开关控制，未导入字典无任何影响，字典不参与团队同步）。团队术语同步全面提速：版本检查与拉取改走 CDN 加速，服务器升级后自动生效，无需任何操作。插件与内核本次无需更新。",
+  "version": "5.8.1",
+  "notes": "本版撤下 5.8.0 引入的字典模块（导入字典 / 编辑器悬浮取词），该功能体验不达预期，后续可能以更好的形态回归；导入过字典的用户无需处理，残留文件不再被读取。团队术语同步 CDN 提速保留。插件与内核无需更新。",
   "pubDate": "2026-07-13",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.0/SekaiText.Next_5.8.0_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.0/SekaiText.Next_5.8.0_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.1/SekaiText.Next_5.8.1_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.1/SekaiText.Next_5.8.1_x64-setup.exe"
   }
 }
