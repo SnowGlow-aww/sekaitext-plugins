@@ -1,9 +1,9 @@
 {
-  "version": "5.8.1",
-  "notes": "本版撤下 5.8.0 引入的字典模块（导入字典 / 编辑器悬浮取词），该功能体验不达预期，后续可能以更好的形态回归；导入过字典的用户无需处理，残留文件不再被读取。团队术语同步 CDN 提速保留。插件与内核无需更新。",
-  "pubDate": "2026-07-13",
+  "version": "5.8.2",
+  "notes": "打轴引擎稳定性优化：修复自动打轴时模板匹配的原生内存持续增长（长视频 / 高分辨率打轴内存占用更平稳、长时间打轴更稳定），并加固「上一段视频还在收尾、立刻开始下一段打轴」这一极窄时序下可能出现的引擎崩溃。打轴精度与导出结果完全不变，无任何功能变化；插件与其余组件无需更新。",
+  "pubDate": "2026-07-14",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.1/SekaiText.Next_5.8.1_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.1/SekaiText.Next_5.8.1_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.2/SekaiText.Next_5.8.2_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.2/SekaiText.Next_5.8.2_x64-setup.exe"
   }
 }
