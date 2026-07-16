@@ -1,9 +1,9 @@
 {
-  "version": "5.8.2",
-  "notes": "打轴引擎稳定性优化：修复自动打轴时模板匹配的原生内存持续增长（长视频 / 高分辨率打轴内存占用更平稳、长时间打轴更稳定），并加固「上一段视频还在收尾、立刻开始下一段打轴」这一极窄时序下可能出现的引擎崩溃。打轴精度与导出结果完全不变，无任何功能变化；插件与其余组件无需更新。",
-  "pubDate": "2026-07-14",
+  "version": "5.8.3",
+  "notes": "打轴修复：短首行台词（如「うんっ☆」起头）不再被腰斩成 1~2 秒；3 行原文的译文自动塌成单行，不再残留 \\N。压制：进度实时刷新、取消显示真实进度而非 100%，已取消/完成的任务卡片可 ✕ 移除。编辑器：修复改标题后立即保存可能产生旧名孤儿文件的竞态。新功能：JSON 下载页一键导出原文 txt（格式与翻译档一致）。内核 2.3.2 随主程序自动更新；请把自动轴机插件更新到 3.2.3（压制卡片移除需配套）。",
+  "pubDate": "2026-07-16",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.2/SekaiText.Next_5.8.2_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.2/SekaiText.Next_5.8.2_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.3/SekaiText.Next_5.8.3_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.3/SekaiText.Next_5.8.3_x64-setup.exe"
   }
 }
