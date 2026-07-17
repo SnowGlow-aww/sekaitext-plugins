@@ -1,9 +1,9 @@
 {
-  "version": "5.8.7",
-  "notes": "压制修复：部分 Windows 机器上压制起步即无声挂死、进度恒 0% 且永不结束的问题（显卡驱动硬件解码故障所致）——引擎新增挂起看门狗，启动 25 秒无任何进度输出即自动终止并降级重试：先只关硬件解码保留硬编速度，仍失败再降 x264 软编，任务不再无声卡死；若每次压制都触发降级等待，可在压制选项关闭「硬解」。压制日志开头现在自动记录系统／CPU／内存／显卡驱动／ffmpeg 版本等环境概览，反馈问题一份日志即可。内核随主程序自动更新，两个插件均无变化。",
+  "version": "5.8.9",
+  "notes": "压制新增字体子系统体检：部分 Windows 机器字体缓存损坏会让压制字幕渲染无声挂起，现在进入压制页自动检测并在面板直接给出警告与修复建议（重建字体缓存），任务日志开头也记录体检结果。硬件编码器未通过检测的原因现可在编码器下拉下方展开查看（例如双显卡机器上 NVENC 消失的原因）。压制日志不再出现 LICENSE 字体噪音行。请先升级主程序，再到插件市场把自动轴机插件更新到 3.2.5。Live2D 插件无变化。",
   "pubDate": "2026-07-17",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.7/SekaiText.Next_5.8.7_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.7/SekaiText.Next_5.8.7_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.9/SekaiText.Next_5.8.9_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.9/SekaiText.Next_5.8.9_x64-setup.exe"
   }
 }
