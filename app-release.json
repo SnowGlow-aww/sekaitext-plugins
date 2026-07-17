@@ -1,9 +1,9 @@
 {
-  "version": "5.8.3",
-  "notes": "打轴修复：短首行台词（如「うんっ☆」起头）不再被腰斩成 1~2 秒；3 行原文的译文自动塌成单行，不再残留 \\N。压制：进度实时刷新、取消显示真实进度而非 100%，已取消/完成的任务卡片可 ✕ 移除。编辑器：修复改标题后立即保存可能产生旧名孤儿文件的竞态。新功能：JSON 下载页一键导出原文 txt（格式与翻译档一致）。内核 2.3.2 随主程序自动更新；请把自动轴机插件更新到 3.2.3（压制卡片移除需配套）。",
-  "pubDate": "2026-07-16",
+  "version": "5.8.4",
+  "notes": "压制修复：部分机器（实测 Windows + Intel QSV 硬编）运行中进度恒显 0%、帧 0/0，取消时才跳出数字——这些环境下 ffmpeg 不输出周期状态行，引擎无从解析。进度改走 ffmpeg 机读通道（-progress），按周期无条件输出，与原状态行解析双通道冗余；此类机器导出的压制日志现在也包含实时进度行。Windows 内置 ffmpeg 从 master 每夜构建钉到 n8.1 稳定分支，与 macOS 行为对齐。内核 2.3.3 随主程序自动更新，插件无需更新。",
+  "pubDate": "2026-07-17",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.3/SekaiText.Next_5.8.3_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.3/SekaiText.Next_5.8.3_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.4/SekaiText.Next_5.8.4_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.4/SekaiText.Next_5.8.4_x64-setup.exe"
   }
 }
