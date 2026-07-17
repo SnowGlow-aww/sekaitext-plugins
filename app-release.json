@@ -1,9 +1,9 @@
 {
-  "version": "5.8.6",
-  "notes": "轴机修复：语音停顿在 festival／活动卡面／初始卡面等卡面类剧情上必报 404 的问题——这些剧情的本地文件名是软件合成的展示名，与语音真实资源文件夹不一致，现改为优先使用剧本内可靠的资源 ID。配套自动轴机插件 3.2.4：分句编辑器顶部常驻日语原文对照（切分点要对着原文语气下刀）。请先升级主程序，再到插件市场更新自动轴机插件。内核与 Live2D 插件无变化。",
+  "version": "5.8.7",
+  "notes": "压制修复：部分 Windows 机器上压制起步即无声挂死、进度恒 0% 且永不结束的问题（显卡驱动硬件解码故障所致）——引擎新增挂起看门狗，启动 25 秒无任何进度输出即自动终止并降级重试：先只关硬件解码保留硬编速度，仍失败再降 x264 软编，任务不再无声卡死；若每次压制都触发降级等待，可在压制选项关闭「硬解」。压制日志开头现在自动记录系统／CPU／内存／显卡驱动／ffmpeg 版本等环境概览，反馈问题一份日志即可。内核随主程序自动更新，两个插件均无变化。",
   "pubDate": "2026-07-17",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.6/SekaiText.Next_5.8.6_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.6/SekaiText.Next_5.8.6_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.7/SekaiText.Next_5.8.7_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.7/SekaiText.Next_5.8.7_x64-setup.exe"
   }
 }
