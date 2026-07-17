@@ -1,9 +1,9 @@
 {
-  "version": "5.8.4",
-  "notes": "压制修复：部分机器（实测 Windows + Intel QSV 硬编）运行中进度恒显 0%、帧 0/0，取消时才跳出数字——这些环境下 ffmpeg 不输出周期状态行，引擎无从解析。进度改走 ffmpeg 机读通道（-progress），按周期无条件输出，与原状态行解析双通道冗余；此类机器导出的压制日志现在也包含实时进度行。Windows 内置 ffmpeg 从 master 每夜构建钉到 n8.1 稳定分支，与 macOS 行为对齐。内核 2.3.3 随主程序自动更新，插件无需更新。",
+  "version": "5.8.5",
+  "notes": "压制修复：最终根治部分 Windows 机器上进度恒显 0%、完成/取消可能永远卡在运行中的问题。真机日志定位到根因：总帧数探测在这类环境下会无限挂起或抛异常，且此前跑在进度解析线程上——首个进度包到达时线程即死。探测已移到独立后台线程（探不出改用时长×帧率估算），取消与完成改为限时等待；另新增 12 秒无进度诊断日志便于后续排查。内核 2.3.4 随主程序自动更新，插件无需更新。",
   "pubDate": "2026-07-17",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.4/SekaiText.Next_5.8.4_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.4/SekaiText.Next_5.8.4_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.5/SekaiText.Next_5.8.5_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.5/SekaiText.Next_5.8.5_x64-setup.exe"
   }
 }
