@@ -1,9 +1,9 @@
 {
-  "version": "5.8.10",
-  "notes": "压制修复：个别机器上（多见于安全软件拦截子进程管道输出）ffmpeg 进度输出全部沉默但编码实际正常推进，此前会在 25 秒后被误判挂起而终止——现在裁决前先看输出文件是否在增长：在长就绝不终止，转入静默模式继续压制，进度条按输出文件体积粗估、完成自动补 100%，日志提示将引擎目录加入安全软件白名单。真正挂起（零输出且文件无增长）仍自动终止并降级重试。内核随主程序自动更新，两个插件均无变化。",
-  "pubDate": "2026-07-17",
+  "version": "5.8.11",
+  "notes": "压制修复：机读进度不再依赖异常 stdout 管道，改由独立临时文件实时读取并自动清理；若硬件压制已实际产出后停止增长，watchdog 会区分为中途挂起，清零旧进度并自动改用 x264 软编 + 软件解码从头重试一次。原有输出文件增长守卫与静默模式继续保留。内核随主程序自动更新，两个插件均无变化。",
+  "pubDate": "2026-07-18",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.10/SekaiText.Next_5.8.10_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.10/SekaiText.Next_5.8.10_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.11/SekaiText.Next_5.8.11_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.11/SekaiText.Next_5.8.11_x64-setup.exe"
   }
 }
