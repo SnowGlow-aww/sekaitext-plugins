@@ -1,9 +1,9 @@
 {
-  "version": "5.8.11",
-  "notes": "压制修复：机读进度不再依赖异常 stdout 管道，改由独立临时文件实时读取并自动清理；若硬件压制已实际产出后停止增长，watchdog 会区分为中途挂起，清零旧进度并自动改用 x264 软编 + 软件解码从头重试一次。原有输出文件增长守卫与静默模式继续保留。内核随主程序自动更新，两个插件均无变化。",
+  "version": "5.8.12",
+  "notes": "",
   "pubDate": "2026-07-18",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.11/SekaiText.Next_5.8.11_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.11/SekaiText.Next_5.8.11_x64-setup.exe"
+    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.8.12/SekaiText.Next_5.8.12_aarch64.dmg",
+    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.8.12/SekaiText.Next_5.8.12_x64-setup.exe"
   }
 }
