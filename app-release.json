@@ -1,9 +1,9 @@
 {
   "version": "5.8.12",
-  "notes": "",
+  "notes": "轴机修复：地点横幅现在可双击编辑，保存后会进入自动保存和重新导出；修复三行原文用回车或 \\N 显式断成两条轴后，断点仍沿用初始状态的问题，新分轴文本与时间轴会立即正确应用；同时区分 \\R 时间分轴与 \\N 排版换行，避免无改动保存令断点偏移。需将自动轴机插件更新到 3.2.6；内核 2.3.9 随主程序更新。",
   "pubDate": "2026-07-18",
   "downloads": {
-    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.8.12/SekaiText.Next_5.8.12_aarch64.dmg",
-    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.8.12/SekaiText.Next_5.8.12_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.12/SekaiText.Next_5.8.12_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.12/SekaiText.Next_5.8.12_x64-setup.exe"
   }
 }
