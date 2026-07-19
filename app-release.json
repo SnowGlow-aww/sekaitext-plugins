@@ -1,9 +1,9 @@
 {
-  "version": "5.8.13",
-  "notes": "压制修复：解决部分 Windows 机器上 QSV 与 x264 已正常产出，却因 FFmpeg 进度通道静默及 120 秒无落盘被 watchdog 误杀的问题；后台 FFmpeg 现禁用控制台输入，避免与引擎 IPC 管道互扰；一旦确认产生有效媒体数据将只告警并继续等待，不再凭旁路静默强杀。硬件编码器探测同步改为足量帧与正式码控参数，减少 QSV、NVENC、AMF 假阴性并显示具体驱动错误。插件无需更新，内核 2.3.10 随主程序更新。",
-  "pubDate": "2026-07-18",
+  "version": "5.9.0",
+  "notes": "",
+  "pubDate": "2026-07-19",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.13/SekaiText.Next_5.8.13_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.8.13/SekaiText.Next_5.8.13_x64-setup.exe"
+    "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.9.0/SekaiText.Next_5.9.0_aarch64.dmg",
+    "windows-amd64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.9.0/SekaiText.Next_5.9.0_x64-setup.exe"
   }
 }
