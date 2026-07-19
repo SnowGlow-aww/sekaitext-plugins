@@ -1,6 +1,6 @@
 {
   "version": "5.9.0",
-  "notes": "",
+  "notes": "## 界面与体验\n\n- 全新统一工作台壳层、侧栏导航、页面标题与内容层级。\n- 编辑器改为紧凑连续表格布局，整份文档使用快速透明渐显。\n- 新手导览适配新布局，修复聚光灯误触和跨页定位偏移。\n\n## 编辑器稳定性\n\n- 剧情原文和译文模板改为原子载入，失败时保留当前文档。\n- 打开、载入、切换模式和清空统一使用文档操作锁。\n- 行编辑请求绑定文档修订号，旧响应不再覆盖新文档。\n- 修复自动保存绑定路径时重建编辑区导致的输入丢失。\n- 所有模式中的未保存内容都会参与打开和载入确认。\n\n## 官网与发布\n\n- 官网生产路径固定为 `/web/`，增加动态 chunks 与远程产物校验。\n- GitHub Release 完成后自动生成并发布应用更新 manifest。\n- 完善 macOS Developer ID 与 ad-hoc 签名、DMG 严格校验流程。\n\n完整变更见仓库 `CHANGELOG.md`。",
   "pubDate": "2026-07-19",
   "downloads": {
     "darwin-aarch64": "https://github.com/SnowGlow-aww/SekaiText-Next/releases/download/v5.9.0/SekaiText.Next_5.9.0_aarch64.dmg",
