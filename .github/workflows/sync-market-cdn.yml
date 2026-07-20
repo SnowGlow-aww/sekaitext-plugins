@@ -1,0 +1,60 @@
+name: sync signed market to OSS/CDN
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - index.json
+      - plugins/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: plugin-market-cdn
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment: plugin-market-cdn
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 24
+      - name: Verify trusted sync sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha256sum -c - <<< "7eebe69861adea08f3e7e5d6218fb18baf36051f45829f7c0039af3631bdc570  scripts/sign-market-index.mjs"
+          sha256sum -c - <<< "b1b4494fc86385261fff327979d56bc5e5f629e7ad12b387bdca4fcdede4b839  scripts/sync-market-cdn.mjs"
+      - name: Validate signed market snapshot
+        id: market
+        env:
+          SEKAITEXT_PLUGIN_PUBLIC_KEYS: ${{ vars.SEKAITEXT_PLUGIN_PUBLIC_KEYS }}
+        run: |
+          node scripts/sign-market-index.mjs --validate index.json
+          echo "version=$(node -p "require('./index.json').version")" >> "$GITHUB_OUTPUT"
+      - name: Install pinned ossutil
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 3 \
+            "https://gosspublic.alicdn.com/ossutil/v2/2.1.2/ossutil-2.1.2-linux-amd64.zip" \
+            -o ossutil.zip
+          echo "133bf2dc824b221710f4ff34fdc82b4b8b1b557cf79f2b684ea9e1af4161acaf  ossutil.zip" | sha256sum -c -
+          unzip -q ossutil.zip
+          sudo install -m 0755 ossutil-2.1.2-linux-amd64/ossutil /usr/local/bin/ossutil
+      - name: Publish immutable packages, then signed index
+        if: steps.market.outputs.version == '3'
+        env:
+          OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
+          OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+          OSS_REGION: ${{ vars.OSS_REGION }}
+          OSS_BUCKET: ${{ vars.OSS_BUCKET }}
+          CDN_ORIGIN: ${{ vars.CDN_ORIGIN }}
+          SEKAITEXT_PLUGIN_PUBLIC_KEYS: ${{ vars.SEKAITEXT_PLUGIN_PUBLIC_KEYS }}
+        run: node scripts/sync-market-cdn.mjs

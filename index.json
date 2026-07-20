@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "plugins": [
     {
       "id": "live2d",
@@ -11,7 +11,11 @@
       "minHostVersion": "2.0.0",
       "download": "https://raw.githubusercontent.com/SnowGlow-aww/sekaitext-plugins/main/plugins/live2d-1.3.1.sekplugin",
       "sha256": "292aa518fb695112bdd8d0e1f5ae3e7c6f48e116428c7f76e1ae5735086e2dfe",
-      "homepage": "https://github.com/SnowGlow-aww/sekaitext-plugin-live2d"
+      "homepage": "https://github.com/SnowGlow-aww/sekaitext-plugin-live2d",
+      "publisher": "sekaitext-official",
+      "keyId": "official-2026-07",
+      "signatureAlgorithm": "ed25519",
+      "packageSignature": "P8h29l7w4FKsiXZ7+cNXx1cN3BplX4+7xRbxrTwMUT57rCRgki2JsTr9C19BiNdcGHZ6jszxx0+rRUzsnymiCA=="
     },
     {
       "id": "auto-timing",
@@ -23,7 +27,11 @@
       "minHostVersion": "5.8.12",
       "download": "https://raw.githubusercontent.com/SnowGlow-aww/sekaitext-plugins/main/plugins/auto-timing-3.2.7.sekplugin",
       "sha256": "ab653cf6e57433b8f94448c6876bf131a52970120ae2337459366a3da72c2598",
-      "homepage": "https://github.com/SnowGlow-aww/sekaitext-plugin-autotiming"
+      "homepage": "https://github.com/SnowGlow-aww/sekaitext-plugin-autotiming",
+      "publisher": "sekaitext-official",
+      "keyId": "official-2026-07",
+      "signatureAlgorithm": "ed25519",
+      "packageSignature": "25hk0morWV4aOAU7OuWu8t74xbDQRJEJ2pUKrmfASrfzmdEFb43ntZVOLCjCUszdWbGOaL8y0FU5t08fkYt+DQ=="
     }
   ]
 }
