@@ -29,7 +29,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          sha256sum -c - <<< "7eebe69861adea08f3e7e5d6218fb18baf36051f45829f7c0039af3631bdc570  scripts/sign-market-index.mjs"
+          sha256sum -c - <<< "bd7566f6dfd3645713c2b37745f06c1286f3875b0d00b9359d66641d374209dd  scripts/sign-market-index.mjs"
           sha256sum -c - <<< "b1b4494fc86385261fff327979d56bc5e5f629e7ad12b387bdca4fcdede4b839  scripts/sync-market-cdn.mjs"
       - name: Validate signed market snapshot
         id: market

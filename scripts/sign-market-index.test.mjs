@@ -9,6 +9,7 @@ import {
   canonicalMetadataPayload,
   canonicalPackagePayload,
   canonicalSnapshotPayload,
+  marketExpiry,
   marketCdnPublicationDecision,
   signIndex,
   validateIndex,
@@ -88,6 +89,10 @@ test('homepage must use HTTPS', () => {
   const { indexPath, entry } = fixture()
   entry.homepage = 'http://example.test/demo'
   assert.throws(() => validateIndex({ version: 2, plugins: [entry] }, indexPath), /homepage must use HTTPS/)
+})
+
+test('generated market expiry uses canonical UTC seconds', () => {
+  assert.equal(marketExpiry(Date.parse('2026-07-20T14:08:57.364Z')), '2027-01-16T14:08:57Z')
 })
 
 test('signer enforces display limits in UTF-8 bytes', () => {

@@ -116,6 +116,12 @@ export function canonicalSnapshotPayload(index) {
   return Buffer.from(payload, 'utf8')
 }
 
+export function marketExpiry(now = Date.now()) {
+  const expiry = new Date(now + 180 * 24 * 60 * 60 * 1000)
+  expiry.setUTCMilliseconds(0)
+  return expiry.toISOString().replace('.000Z', 'Z')
+}
+
 function validateHTTPS(value, label) {
   let parsed
   try { parsed = new URL(value) } catch { throw new Error(`${label} must be an absolute URL`) }
@@ -334,7 +340,7 @@ export function signIndex(index, indexPath, env = process.env) {
   invariant(Number.isSafeInteger(requestedSequence) && requestedSequence > 0, 'MARKET_SEQUENCE must be a positive safe integer')
   const priorMaximum = Math.max(0, ...index.plugins.map((entry) => Number.isSafeInteger(entry.sequence) ? entry.sequence : 0))
   const sequence = Math.max(requestedSequence, priorMaximum + 1)
-  const expiresAt = env.MARKET_EXPIRES_AT || new Date(Date.now() + 180 * 24 * 60 * 60 * 1000).toISOString().replace('.000Z', 'Z')
+  const expiresAt = env.MARKET_EXPIRES_AT || marketExpiry()
 
   index.version = 3
   index.publisher = PUBLISHER
