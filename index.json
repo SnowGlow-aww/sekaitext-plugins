@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "plugins": [
     {
       "id": "live2d",
@@ -15,7 +15,10 @@
       "publisher": "sekaitext-official",
       "keyId": "official-2026-07",
       "signatureAlgorithm": "ed25519",
-      "packageSignature": "P8h29l7w4FKsiXZ7+cNXx1cN3BplX4+7xRbxrTwMUT57rCRgki2JsTr9C19BiNdcGHZ6jszxx0+rRUzsnymiCA=="
+      "packageSignature": "P8h29l7w4FKsiXZ7+cNXx1cN3BplX4+7xRbxrTwMUT57rCRgki2JsTr9C19BiNdcGHZ6jszxx0+rRUzsnymiCA==",
+      "sequence": 29749337797,
+      "expiresAt": "2027-01-16T14:08:57.364Z",
+      "metadataSignature": "daVPAyLP1j2In+iH6NAYM6hsJHzmbtUZ3mjp8HUawCbVXyN2sOcJFxvgulAA+XKS7Lgq9jXAEbuhEFcNoUB2Dg=="
     },
     {
       "id": "auto-timing",
@@ -31,7 +34,16 @@
       "publisher": "sekaitext-official",
       "keyId": "official-2026-07",
       "signatureAlgorithm": "ed25519",
-      "packageSignature": "25hk0morWV4aOAU7OuWu8t74xbDQRJEJ2pUKrmfASrfzmdEFb43ntZVOLCjCUszdWbGOaL8y0FU5t08fkYt+DQ=="
+      "packageSignature": "25hk0morWV4aOAU7OuWu8t74xbDQRJEJ2pUKrmfASrfzmdEFb43ntZVOLCjCUszdWbGOaL8y0FU5t08fkYt+DQ==",
+      "sequence": 29749337797,
+      "expiresAt": "2027-01-16T14:08:57.364Z",
+      "metadataSignature": "OES/DteWDawa34qLuRr3shB4L7iUg1TxeahLDgeLj9IcHmySnRnjREBLCvd8GX1u3e/tq5hOuMiNcJk0efCKBg=="
     }
-  ]
+  ],
+  "publisher": "sekaitext-official",
+  "keyId": "official-2026-07",
+  "signatureAlgorithm": "ed25519",
+  "sequence": 29749337797,
+  "expiresAt": "2027-01-16T14:08:57.364Z",
+  "snapshotSignature": "ORLD4sOsfH7julRCeJuZSIxtCeOuppLS83rDUAUqhPMt4d67Rvb/LWQFdBzCYRNGKMV/dNM5iv4sfc9sKA6jAA=="
 }
