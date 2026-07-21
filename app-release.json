@@ -1,24 +1,24 @@
 {
-  "version": "5.9.4",
-  "notes": "# SekaiText Next v5.9.4\r\n\r\n`v5.9.4` 是团队术语库登录会话的紧急修复版本。\r\n\r\n## 登录会话修复\r\n\r\n- 移除团队服务器证书 SHA-256 指纹核验、指纹确认弹窗和对应探测接口。\r\n- 修复旧版 `team-session.json` 不含证书指纹时，refresh token 被清空并覆写的问题。\r\n- 升级前仍保有 refresh token 的会话会在启动时自动刷新，包括不带指纹的旧会话及带过期指纹的会话。\r\n- 保留团队服务器 HTTPS 地址限制、同源重定向限制和会话切换竞态保护。\r\n\r\n## 升级说明\r\n\r\n- 如果 refresh token 尚未被 `v5.9.3` 覆写，升级后无需重新登录。\r\n- 如果 `v5.9.3` 已经把本地 refresh token 清空，该令牌无法从客户端恢复，需要重新登录一次。\r\n\r\n## 下载\r\n\r\n- macOS：Apple 芯片，macOS 12 及以上。\r\n- Windows：x64，Windows 10 及以上。\r\n- 安装包与签名更新清单同时发布到 GitHub Releases 和项目 CDN。\r\n",
+  "version": "5.9.5",
+  "notes": "# SekaiText Next v5.9.5\n\n`v5.9.5` 是应用内更新检查的紧急网络兼容补丁。\n\n## 更新检查修复\n\n- 修复 Clash 及兼容 TUN 代理启用 Fake-IP 模式时，应用内检查更新失败的问题。\n- 更新客户端现在允许公网域名经本机 DNS 代理解析到 `198.18.0.0/15` Fake-IP 后继续连接。\n- 直接填写 `198.18.x.x` 的更新地址仍会被拒绝；公网 HTTPS、安装包来源限制、签名校验和防回滚保护保持不变。\n- 已使用与正式客户端相同的 Go 校验路径和正式 Ed25519 公钥验证线上更新清单。\n\n## 升级说明\n\n- Clash Fake-IP 用户的旧版更新客户端无法发现本补丁，需要从官网或 GitHub Releases 手动安装 `v5.9.5` 一次。\n- 安装 `v5.9.5` 后，后续应用内检查与下载更新会在该网络环境下正常工作。\n- 未使用 Fake-IP 的用户可正常通过应用内更新升级。\n\n## 下载\n\n- macOS：Apple 芯片，macOS 12 及以上。\n- Windows：x64，Windows 10 及以上。\n- 安装包与签名更新清单同时发布到 GitHub Releases 和项目 CDN。\n",
   "pubDate": "2026-07-21",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.9.4/SekaiText.Next_5.9.4_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.9.4/SekaiText.Next_5.9.4_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.9.5/SekaiText.Next_5.9.5_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.9.5/SekaiText.Next_5.9.5_x64-setup.exe"
   },
   "artifacts": {
     "darwin-aarch64": {
-      "digest": "sha256:0e1092dd9b96b653bfd1c91cdc6609e519ea0594c52b7b8ad4439dffc2b5819f",
-      "size": 132716218
+      "digest": "sha256:6ec210618b8e6ec7250336dff587ae9a51c981d2860611c06aaf9a3328fe3bf5",
+      "size": 132698300
     },
     "windows-amd64": {
-      "digest": "sha256:cf9b2e138df13f1fb39d2ce02aa56b659aa8eba98ea6b72ee3349741b9ae47fb",
-      "size": 118988289
+      "digest": "sha256:b56b44c8ad164ed177a5197e6dbf9de027569cc72b39525d4a34fd30e764a7a5",
+      "size": 118995700
     }
   },
   "signature": {
     "algorithm": "ed25519",
     "keyId": "app-update-2026-07",
-    "value": "7gUn5UsDxfc1TwrSoaN0eGEWSNpRyGTuPoI9EcBgNWt5M49dv6ODGFYDb6BXJsE91CZljA/XqOS5Ad66qvlIAQ=="
+    "value": "NYVBUjw4+PVkI+OngaTOglDTtP8fbyROMl4Lt3U/qL6WBldy3UK3IRf6B0D2ES9+3UrSzo5h8xitHwJIOrjfAg=="
   }
 }
