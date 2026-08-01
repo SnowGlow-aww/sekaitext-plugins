@@ -16,9 +16,9 @@
       "keyId": "official-2026-07",
       "signatureAlgorithm": "ed25519",
       "packageSignature": "P8h29l7w4FKsiXZ7+cNXx1cN3BplX4+7xRbxrTwMUT57rCRgki2JsTr9C19BiNdcGHZ6jszxx0+rRUzsnymiCA==",
-      "sequence": 29750126836,
-      "expiresAt": "2027-01-16T14:19:31Z",
-      "metadataSignature": "op2YtLUsi8Vt4IOVRBN/IL2194BLJwhPEWIZSi81hKzZ0ys3tK+06+UABWmNKUGInlHgpBRQMbRD6LGdTPTzDg=="
+      "sequence": 30688164524,
+      "expiresAt": "2027-01-28T06:39:50Z",
+      "metadataSignature": "Vb6B0ISmq6w0kC8CJV+vK6+W1gfGs+7mhK0gapZ9gA93huDEz+NlEHpjvPQI+iIXlAGWQ4nn+8JhAzOIZDjKAA=="
     },
     {
       "id": "auto-timing",
@@ -35,15 +35,15 @@
       "keyId": "official-2026-07",
       "signatureAlgorithm": "ed25519",
       "packageSignature": "25hk0morWV4aOAU7OuWu8t74xbDQRJEJ2pUKrmfASrfzmdEFb43ntZVOLCjCUszdWbGOaL8y0FU5t08fkYt+DQ==",
-      "sequence": 29750126836,
-      "expiresAt": "2027-01-16T14:19:31Z",
-      "metadataSignature": "aQWBhB2pXR0FF0XnF47eeXNBCzCs9xzR63Ya10SLpD6Nk95tGhgbH1iTzGeqZM5vtq7o/OttwsiFG9Ro80LPAg=="
+      "sequence": 30688164524,
+      "expiresAt": "2027-01-28T06:39:50Z",
+      "metadataSignature": "qUazxw5CJQ1rtJp1hsrWPwnUmf6pmiwk3lPdOJQQYIpEagrHxxsvfS8SzkJQXBHLyb0EMsc/0EACnrcqCZWsBQ=="
     }
   ],
   "publisher": "sekaitext-official",
   "keyId": "official-2026-07",
   "signatureAlgorithm": "ed25519",
-  "sequence": 29750126836,
-  "expiresAt": "2027-01-16T14:19:31Z",
-  "snapshotSignature": "QMDfWDU5BoAEJOY2ZJpsBuDEh2H0hGXFGSaQi2IV7XLDoYiQUp+/QEJPJguvoAxswNDRO1af9h11zqkNpUTGBQ=="
+  "sequence": 30688164524,
+  "expiresAt": "2027-01-28T06:39:50Z",
+  "snapshotSignature": "Zch049YoJ0isbAaWDYJIV+0UkVgG7VfzsjO2UQk2vZRzAMxM4GCoxN7ENE5XyLo6uvciEfGbc18cfZUyBEU/DA=="
 }
