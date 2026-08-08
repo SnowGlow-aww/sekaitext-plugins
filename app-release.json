@@ -1,24 +1,24 @@
 {
-  "version": "5.9.8",
-  "notes": "## 中文\n\n> **P0 团队模式热修复**：修复 5.9.7 无法登录使用 Caddy 内部 CA 的官方团队术语服务器的问题。\n\n### 👥 团队模式\n\n- 修复连接 `https://8.140.254.217:8443` 时出现 `Caddy Local Authority ... certificate is not trusted`，导致登录与只读连接在 TLS 握手阶段被阻断的问题。\n- 随应用内置官方服务器的**公开根证书**，并只对官方服务器的精确来源地址启用；Caddy 的短期叶证书和中间证书正常轮换后仍可继续验证。\n- 失败期间账号密码并未发送到远程服务器：证书校验发生在 HTTP 登录请求之前。\n\n### 🔒 安全边界\n\n- 没有恢复 `InsecureSkipVerify`，也没有全局跳过证书校验。\n- 继续验证 TLS 证书链、服务器 IP SAN、有效期和主机名，并继续禁止携带凭据的请求跨来源重定向。\n- 内置 CA 不会用于其他端口、相似域名或第三方团队服务器；自建私有 CA 仍需由操作系统或用户显式信任。\n- 安装包只包含公开的 `root.crt`，不包含 Caddy 根私钥或任何服务器密钥。\n\n### ✅ 验证\n\n- 使用内置根证书通过真实 Go `TeamService` 连接官方服务器，并成功读取当前术语库版本。\n- 官方根证书 SHA-256 指纹：`D2:E9:B3:6C:33:7E:72:03:D3:0B:87:41:AB:52:38:22:FE:35:B0:D3:1E:6D:C2:51:9D:5F:99:8C:0F:19:09:25`。\n- Go race 测试、`go vet`、后端构建、前端与发布脚本测试、Rust locked 测试与 release check、生产构建、网站构建和 npm 安全审计全部通过。\n\n---\n\n## English\n\n> **P0 team-mode hotfix:** fixes the 5.9.7 regression that prevented the official glossary server using Caddy's internal CA from being opened or logged into.\n\n### Team mode\n\n- Fixed `Caddy Local Authority ... certificate is not trusted` when connecting to `https://8.140.254.217:8443`.\n- Bundled only the official server's **public root certificate** and scoped it to that exact origin, so normal Caddy leaf and intermediate rotation remains valid.\n- Credentials were never sent during the failed 5.9.7 connection attempts because TLS verification stopped the connection before the HTTP login request.\n\n### Security boundaries\n\n- TLS verification remains fully enabled; `InsecureSkipVerify` was not restored.\n- Certificate chain, IP SAN/hostname, validity period, and same-origin redirect checks remain enforced.\n- The bundled CA is not trusted for other ports, lookalike hostnames, or third-party team servers. Private deployments must still install their CA into the operating-system or user trust store.\n- Installers contain only the public `root.crt`, never the Caddy root private key or any server key.\n",
-  "pubDate": "2026-08-01",
+  "version": "5.9.9",
+  "notes": "**Full Changelog**: https://github.com/SnowGlow-aww/SekaiText-Next/compare/v5.9.8...v5.9.9",
+  "pubDate": "2026-08-08",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.9.8/SekaiText.Next_5.9.8_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.9.8/SekaiText.Next_5.9.8_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.9.9/SekaiText.Next_5.9.9_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.9.9/SekaiText.Next_5.9.9_x64-setup.exe"
   },
   "artifacts": {
     "darwin-aarch64": {
-      "digest": "sha256:d2edcc2855fdb50e7eed32eea35d394350a14ea2df4d59239587dec2daf21500",
-      "size": 133906241
+      "digest": "sha256:86c4cd7162b8e604710345bc6515891d51e0dec25f8018a11f9a3045dba61eee",
+      "size": 133935298
     },
     "windows-amd64": {
-      "digest": "sha256:54cf60fa8f58da69a609fdb94bdb2a636f5c0d5ea06f0454710353231007e161",
-      "size": 120125612
+      "digest": "sha256:8973d248802b10b77dea44997ba11e6444683849920ac673cdcd34ec9b1d48b4",
+      "size": 120197817
     }
   },
   "signature": {
     "algorithm": "ed25519",
     "keyId": "app-update-2026-07",
-    "value": "ZlC87AqmqzhHMVyvsFnXK6B7T4+HO2wBiBc7akC6WIfsKprDG+L3lYByoPGu40RNe8zrBrhjOj/9pPDLjfadCw=="
+    "value": "GgIzWfCmZn5Gx7llmvSjj5An1wrz9vt5rYz4jeU9zr0qrWKuPxHhGQ6bOgCVbJPc3plBBvQkDYRIgO2dBtRvBA=="
   }
 }
