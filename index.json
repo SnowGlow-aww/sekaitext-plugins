@@ -4,21 +4,21 @@
     {
       "id": "live2d",
       "name": "Live2D 剧情播放器",
-      "version": "1.3.1",
+      "version": "1.3.2",
       "description": "在编辑器内播放 Live2D 剧情，支持模型/动作/语音/特效与本地素材库。",
       "author": "雪莹ちゃん",
       "icon": "Drama",
-      "minHostVersion": "2.0.0",
-      "download": "https://raw.githubusercontent.com/SnowGlow-aww/sekaitext-plugins/main/plugins/live2d-1.3.1.sekplugin",
-      "sha256": "292aa518fb695112bdd8d0e1f5ae3e7c6f48e116428c7f76e1ae5735086e2dfe",
+      "minHostVersion": "5.9.9",
+      "download": "https://raw.githubusercontent.com/SnowGlow-aww/sekaitext-plugins/main/plugins/live2d-1.3.2.sekplugin",
+      "sha256": "98d89e05e516ad8f8ab1195e930068830fb80be4b71fbacf42c5dfe173eb6980",
       "homepage": "https://github.com/SnowGlow-aww/sekaitext-plugin-live2d",
       "publisher": "sekaitext-official",
       "keyId": "official-2026-07",
       "signatureAlgorithm": "ed25519",
-      "packageSignature": "P8h29l7w4FKsiXZ7+cNXx1cN3BplX4+7xRbxrTwMUT57rCRgki2JsTr9C19BiNdcGHZ6jszxx0+rRUzsnymiCA==",
-      "sequence": 30688164524,
-      "expiresAt": "2027-01-28T06:39:50Z",
-      "metadataSignature": "Vb6B0ISmq6w0kC8CJV+vK6+W1gfGs+7mhK0gapZ9gA93huDEz+NlEHpjvPQI+iIXlAGWQ4nn+8JhAzOIZDjKAA=="
+      "sequence": 31271068474,
+      "expiresAt": "2027-02-04T18:12:32Z",
+      "packageSignature": "pXp8UNKCiIPD2DLJLrAXmc2BdKNSrnWZKNZGrVmVQOmLXi7B9SSIXAE+WYdOMgnuG5ONc5FgeHKaJmNcJii6AQ==",
+      "metadataSignature": "onGJahctg5cOG/QINNf8z+Bn986d5MqKL+NUV8EnqOovV0vZrrg2UHKVEEhZM+HCEn5sOE63Yd0X1ED081ivDQ=="
     },
     {
       "id": "auto-timing",
@@ -35,15 +35,15 @@
       "keyId": "official-2026-07",
       "signatureAlgorithm": "ed25519",
       "packageSignature": "25hk0morWV4aOAU7OuWu8t74xbDQRJEJ2pUKrmfASrfzmdEFb43ntZVOLCjCUszdWbGOaL8y0FU5t08fkYt+DQ==",
-      "sequence": 30688164524,
-      "expiresAt": "2027-01-28T06:39:50Z",
-      "metadataSignature": "qUazxw5CJQ1rtJp1hsrWPwnUmf6pmiwk3lPdOJQQYIpEagrHxxsvfS8SzkJQXBHLyb0EMsc/0EACnrcqCZWsBQ=="
+      "sequence": 31271068474,
+      "expiresAt": "2027-02-04T18:12:32Z",
+      "metadataSignature": "G1bqrmuqdYYWNXT89eG9qQCNqjhMjmEE8Tewy/ul2bWHyGKS2jAuis6pNb2UgovdZWTCSSRdPo35Uj6wd9MMDw=="
     }
   ],
   "publisher": "sekaitext-official",
   "keyId": "official-2026-07",
   "signatureAlgorithm": "ed25519",
-  "sequence": 30688164524,
-  "expiresAt": "2027-01-28T06:39:50Z",
-  "snapshotSignature": "Zch049YoJ0isbAaWDYJIV+0UkVgG7VfzsjO2UQk2vZRzAMxM4GCoxN7ENE5XyLo6uvciEfGbc18cfZUyBEU/DA=="
+  "sequence": 31271068474,
+  "expiresAt": "2027-02-04T18:12:32Z",
+  "snapshotSignature": "nAV4n2mkVHPpERhaTc14HA0XkLMgEtvI/7pPJdqMqH2hZwKsvse054pBmVTNNb+UmZuhpMLLS1jkxyylS1sOAA=="
 }
