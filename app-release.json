@@ -1,24 +1,24 @@
 {
-  "version": "5.9.10",
-  "notes": "**Full Changelog**: https://github.com/SnowGlow-aww/SekaiText-Next/compare/v5.9.9...v5.9.10",
-  "pubDate": "2026-08-10",
+  "version": "5.9.11",
+  "notes": "**Full Changelog**: https://github.com/SnowGlow-aww/SekaiText-Next/compare/v5.9.10...v5.9.11",
+  "pubDate": "2026-08-13",
   "downloads": {
-    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.9.10/SekaiText.Next_5.9.10_aarch64.dmg",
-    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.9.10/SekaiText.Next_5.9.10_x64-setup.exe"
+    "darwin-aarch64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.9.11/SekaiText.Next_5.9.11_aarch64.dmg",
+    "windows-amd64": "https://sakimizuki.accr.cc/sekaitext-releases/v5.9.11/SekaiText.Next_5.9.11_x64-setup.exe"
   },
   "artifacts": {
     "darwin-aarch64": {
-      "digest": "sha256:5a1895e0e8ffe8cd88ab986e70636f1305884aba7eef0229dbd1fd2f0ab94476",
-      "size": 133973135
+      "digest": "sha256:aebbd5c0778667a6a7f94e2a7721f79c50d949f6e8eb723b49cb007b1bc8d25a",
+      "size": 133950382
     },
     "windows-amd64": {
-      "digest": "sha256:bdf0772747269c95ba3a88cd2b4644b471ee013f49b96d55bb9589d84a0589cf",
-      "size": 120153719
+      "digest": "sha256:3a5524de489b30224d28aaff24fd39fa25a26e47e6d60e72f134f1005bf6c58f",
+      "size": 120155163
     }
   },
   "signature": {
     "algorithm": "ed25519",
     "keyId": "app-update-2026-07",
-    "value": "TV/B/Lmi83wZpm3gy4+E0N4ryc7jhlRKUwgrlueuUhqpGeY2LayIvOyz3jod/rhXRvurmjPjbY7/8p4ZsV71Dw=="
+    "value": "AOeg4w0xTxM3wNrZ9EV3TFPRM2LUeFJeAFSEVCNoim4o6avzdWIH+DVfix56PQUZXbXcNJ76aWSjW+SAQKs1CA=="
   }
 }
