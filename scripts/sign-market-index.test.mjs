@@ -80,6 +80,29 @@ function signer(entry) {
   }
 }
 
+function authenticateV3(index, privateKey, { sequence = 99, expiresAt = '2030-01-01T00:00:00Z' } = {}) {
+  Object.assign(index, {
+    version: 3,
+    publisher: 'sekaitext-official',
+    keyId: 'test-key',
+    signatureAlgorithm: 'ed25519',
+    sequence,
+    expiresAt,
+  })
+  for (const entry of index.plugins) {
+    Object.assign(entry, {
+      publisher: index.publisher,
+      keyId: index.keyId,
+      signatureAlgorithm: index.signatureAlgorithm,
+      sequence,
+      expiresAt,
+    })
+    entry.metadataSignature = sign(null, canonicalMetadataPayload(entry), privateKey).toString('base64')
+  }
+  index.snapshotSignature = sign(null, canonicalSnapshotPayload(index), privateKey).toString('base64')
+  return index
+}
+
 test('v2 schema and archive manifest validation accepts a matching package', () => {
   const { indexPath, entry } = fixture()
   assert.doesNotThrow(() => validateIndex({ version: 2, plugins: [entry] }, indexPath))
@@ -114,18 +137,33 @@ test('metadata canonical payload changes for every displayed field', () => {
   }
 })
 
-test('signer verifies every existing package signature before re-signing', () => {
+test('signer rejects v2 input before key handling and leaves it unchanged', () => {
   const { indexPath, entry } = fixture()
-  const { env } = signer(entry)
   const index = { version: 2, plugins: [entry] }
+  const before = structuredClone(index)
+  assert.throws(
+    () => signIndex(index, indexPath, {}),
+    /already authenticated v3 market snapshot/,
+  )
+  assert.deepEqual(index, before)
+})
+
+test('signer verifies every existing v3 package signature before re-signing', () => {
+  const { indexPath, entry } = fixture()
+  const { privateKey, env } = signer(entry)
+  const index = authenticateV3({ version: 3, plugins: [entry] }, privateKey)
   assert.doesNotThrow(() => signIndex(index, indexPath, env))
   assert.equal(index.version, 3)
 
   const compromised = fixture()
   const compromisedSigner = signer(compromised.entry)
+  const compromisedIndex = authenticateV3(
+    { version: 3, plugins: [compromised.entry] },
+    compromisedSigner.privateKey,
+  )
   compromised.entry.packageSignature = Buffer.alloc(64).toString('base64')
   assert.throws(
-    () => signIndex({ version: 2, plugins: [compromised.entry] }, compromised.indexPath, compromisedSigner.env),
+    () => signIndex(compromisedIndex, compromised.indexPath, compromisedSigner.env),
     /packageSignature verification failed/,
   )
 })
@@ -135,7 +173,7 @@ test('v3 snapshot signature authenticates complete equal-sequence membership', (
   const { privateKey, env } = signer(entry)
   const second = fixtureEntry(root, { id: 'second', name: 'Second', version: '2.0.0' })
   second.packageSignature = sign(null, canonicalPackagePayload(second), privateKey).toString('base64')
-  const index = { version: 2, plugins: [entry, second] }
+  const index = authenticateV3({ version: 3, plugins: [entry, second] }, privateKey)
 
   signIndex(index, indexPath, env)
   const trustMap = JSON.parse(env.SEKAITEXT_PLUGIN_PUBLIC_KEYS)
@@ -152,14 +190,11 @@ test('v3 snapshot signature authenticates complete equal-sequence membership', (
 test('renewal accepts authentic expired v3 input but emits a fresh expiry', () => {
   const { indexPath, entry } = fixture()
   const { privateKey, env } = signer(entry)
-  const index = { version: 2, plugins: [entry] }
-  signIndex(index, indexPath, env)
-  index.expiresAt = '2020-01-01T00:00:00Z'
-  entry.sequence = 99
-  entry.expiresAt = '2020-01-01T00:00:00Z'
-  entry.metadataSignature = sign(null, canonicalMetadataPayload(entry), privateKey).toString('base64')
-  index.sequence = 99
-  index.snapshotSignature = sign(null, canonicalSnapshotPayload(index), privateKey).toString('base64')
+  const index = authenticateV3(
+    { version: 3, plugins: [entry] },
+    privateKey,
+    { sequence: 99, expiresAt: '2020-01-01T00:00:00Z' },
+  )
 
   assert.doesNotThrow(() => signIndex(index, indexPath, env))
   assert.equal(entry.expiresAt, env.MARKET_EXPIRES_AT)
@@ -168,7 +203,7 @@ test('renewal accepts authentic expired v3 input but emits a fresh expiry', () =
 
 test('CDN publication permits a validated v1 migration and preserves v3 rollback state', () => {
   const { indexPath, entry } = fixture()
-  const { env } = signer(entry)
+  const { privateKey, env } = signer(entry)
   const legacy = { version: 1, plugins: [structuredClone(entry)] }
   for (const item of legacy.plugins) {
     delete item.publisher
@@ -176,7 +211,7 @@ test('CDN publication permits a validated v1 migration and preserves v3 rollback
     delete item.signatureAlgorithm
     delete item.packageSignature
   }
-  const candidate = { version: 2, plugins: [entry] }
+  const candidate = authenticateV3({ version: 3, plugins: [entry] }, privateKey)
   signIndex(candidate, indexPath, env)
   const trustMap = JSON.parse(env.SEKAITEXT_PLUGIN_PUBLIC_KEYS)
 

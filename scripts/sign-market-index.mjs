@@ -316,6 +316,7 @@ function parseTrustedKeys(raw) {
 }
 
 export function signIndex(index, indexPath, env = process.env) {
+  invariant(index?.version === 3, 'signing requires an already authenticated v3 market snapshot')
   const keyId = env.PLUGIN_SIGNING_KEY_ID ?? ''
   invariant(/^[A-Za-z0-9._-]{1,64}$/.test(keyId), 'PLUGIN_SIGNING_KEY_ID is missing or invalid')
   const privateKey = createPrivateKey({
@@ -342,7 +343,6 @@ export function signIndex(index, indexPath, env = process.env) {
   const sequence = Math.max(requestedSequence, priorMaximum + 1)
   const expiresAt = env.MARKET_EXPIRES_AT || marketExpiry()
 
-  index.version = 3
   index.publisher = PUBLISHER
   index.keyId = keyId
   index.signatureAlgorithm = ALGORITHM
