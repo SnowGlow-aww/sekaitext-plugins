@@ -15,35 +15,35 @@
       "publisher": "sekaitext-official",
       "keyId": "official-2026-07",
       "signatureAlgorithm": "ed25519",
-      "sequence": 33155945248,
-      "expiresAt": "2027-02-24T08:35:58Z",
+      "sequence": 33157193973,
+      "expiresAt": "2027-02-24T08:54:57Z",
       "packageSignature": "pXp8UNKCiIPD2DLJLrAXmc2BdKNSrnWZKNZGrVmVQOmLXi7B9SSIXAE+WYdOMgnuG5ONc5FgeHKaJmNcJii6AQ==",
-      "metadataSignature": "kg0uHK/CzgzOHAOfQF2j2a+xDAeeGPoSVBQXKxWU4srwf55e89UNjvPEBOpq2FibOIgKnjeV82PZMNns3B+CBg=="
+      "metadataSignature": "RH2E049p/DvtRoyA8ZM8kxLzJMl/WW8CFAGCw8xHHrCRM34s6eRo9yytobxNHB8HR08RoqqZaQNU281Mjwy+AQ=="
     },
     {
       "id": "auto-timing",
       "name": "自动轴机 + 压制",
-      "version": "3.2.10",
+      "version": "3.2.11",
       "description": "在编辑器内自动打轴(双列行列表+分句微调)、与 Aegisub 双向同步(译文+换行时间)、压制成片；支持多视频并行任务。",
       "author": "雪莹ちゃん",
       "icon": "Clapperboard",
       "minHostVersion": "5.9.10",
-      "download": "https://raw.githubusercontent.com/SnowGlow-aww/sekaitext-plugins/main/plugins/auto-timing-3.2.10.sekplugin",
-      "sha256": "3036fb1ddcaa4fddc8b76840b86ee973168c0c4200939a8305ff741161fc3b94",
+      "download": "https://raw.githubusercontent.com/SnowGlow-aww/sekaitext-plugins/main/plugins/auto-timing-3.2.11.sekplugin",
+      "sha256": "6193c3c5cfcf53fa10d3ecc51599235e9ad23c084dd29d92b5a8505029a83a4b",
       "homepage": "https://github.com/SnowGlow-aww/sekaitext-plugin-autotiming",
       "publisher": "sekaitext-official",
       "keyId": "official-2026-07",
       "signatureAlgorithm": "ed25519",
-      "sequence": 33155945248,
-      "expiresAt": "2027-02-24T08:35:58Z",
-      "packageSignature": "JkmFgxgk882K03+K3U7qCgMjDeO5780kGmltZaK1TfIWTNcGQJ7qEi8YM28J1JmbO5bodoqVa2uExKxyAJpkBg==",
-      "metadataSignature": "d34CYdQSq6nSMn014BK6RfhCP1qJfeYERB7bJGbe7IoQ5EnPn0D0TKryTwco7Tap/rR0hSWApVqzgkAVNmhvDQ=="
+      "sequence": 33157193973,
+      "expiresAt": "2027-02-24T08:54:57Z",
+      "packageSignature": "+h6b+e+mAaR5tFnEyOZ8K0nT/naPKAh8MmucdYePc/mAxN8WD/GOfMdqu96DOATSSRy2pQ/Oq0wQy3gq5xr1DA==",
+      "metadataSignature": "MSAaHUFINAmp2I/m3/EuK4ZkW/oFAbj3PJ5KPjBXlQyEG9LfXpV5EJ4fj7lc8gkfste/xQ6p1WnXTF5A6dyfCA=="
     }
   ],
   "publisher": "sekaitext-official",
   "keyId": "official-2026-07",
   "signatureAlgorithm": "ed25519",
-  "sequence": 33155945248,
-  "expiresAt": "2027-02-24T08:35:58Z",
-  "snapshotSignature": "tlsAss5jTpM9x52c8dn0qIs3+yM4WKFS+wrQTyIpf9zecJ3o2gnQsD9DDoCPISKkc+IA/vnIaaJ4cqBFls+RBQ=="
+  "sequence": 33157193973,
+  "expiresAt": "2027-02-24T08:54:57Z",
+  "snapshotSignature": "dy9g26KJTmBY5igIOLYaLS+HMFyR46U/Axg0HkxYzHdSgWMsDAHlEruZr6uvj6p/ggogiW08py5LSnqhzlqHDA=="
 }
