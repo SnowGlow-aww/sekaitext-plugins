@@ -15,10 +15,10 @@
       "publisher": "sekaitext-official",
       "keyId": "official-2026-07",
       "signatureAlgorithm": "ed25519",
-      "sequence": 33258943260,
-      "expiresAt": "2027-02-25T14:58:05Z",
+      "sequence": 33491937767,
+      "expiresAt": "2027-02-28T09:23:17Z",
       "packageSignature": "pXp8UNKCiIPD2DLJLrAXmc2BdKNSrnWZKNZGrVmVQOmLXi7B9SSIXAE+WYdOMgnuG5ONc5FgeHKaJmNcJii6AQ==",
-      "metadataSignature": "U5OXq3/W8/7jdGv+GqtBxMo6uzpoKeMbCGghWhQbDzVMiMC+1As1N5HZo+pQEaR0zeDFi+oMi0+hXhfEXL+rBA=="
+      "metadataSignature": "qusVm4RB0jZeb2XPj7R2bDsedf6M1cg0ulqEqICPg7o9gGHs9wxc+JTCR8KtqWLIUEVsMpKZSzng+z7hgNPhAQ=="
     },
     {
       "id": "auto-timing",
@@ -34,16 +34,16 @@
       "publisher": "sekaitext-official",
       "keyId": "official-2026-07",
       "signatureAlgorithm": "ed25519",
-      "sequence": 33258943260,
-      "expiresAt": "2027-02-25T14:58:05Z",
+      "sequence": 33491937767,
+      "expiresAt": "2027-02-28T09:23:17Z",
       "packageSignature": "2mLVhLNNjV0tUzoqxrLmQiX224NgXZ1mQuo5mAwroqI4wp/gLRaqU1W3Fov53rDERJTmhMnPSvzQsVi06zqsBw==",
-      "metadataSignature": "d/+ns72pNEjaB4FzfixjT+TiUmwl/yW0rFi74FoCpix7GC0HdM58MO9IZIg3I25SFgnBABEzwsJ1Oy/GPCcyDA=="
+      "metadataSignature": "nHA30Wi0QV0yBgj1lqqpW8MY5gB3EuQcifuDDPEUmBFxTfl2iZqkilGkG+hkF9vOqtUV4Eofsr5TNgLJFEgjBg=="
     }
   ],
   "publisher": "sekaitext-official",
   "keyId": "official-2026-07",
   "signatureAlgorithm": "ed25519",
-  "sequence": 33258943260,
-  "expiresAt": "2027-02-25T14:58:05Z",
-  "snapshotSignature": "yJpMPSK0EJ2M0x84umhXWEjuBtwQzAUZfKg8XmkX1DuGh2Rs4qJAu+XJpx5PYDBjPHCaBY3TeU0yxcG+sgCMBw=="
+  "sequence": 33491937767,
+  "expiresAt": "2027-02-28T09:23:17Z",
+  "snapshotSignature": "LpqR+zAxtE8NMg3xdXxzM5uiHYPa5ZqjU0pgHNwBVrdugaUGflBVyMhMkmrYR2cUyrDp4xBChMkbB/cXtcw7Ag=="
 }
